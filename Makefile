@@ -50,6 +50,7 @@ commands:
 	@echo "  CLEAN  	: Clean the database"
 	@echo "  STATUS 	: Shows status"
 	@echo "  STATUS_SHORT 	: Shows status"
+	@echo "  MERGE 		: Merge with master"
 	@echo ""
 
 #############
@@ -59,6 +60,10 @@ commands:
 CLEAN:
 	@echo "Cleaning..."
 	@-\rm $(RUN_RX_FILE)
+
+MERGE:
+	@echo "Merging..."
+	@git push origin master
 
 STATUS:
 	@echo "Showing status..." 
